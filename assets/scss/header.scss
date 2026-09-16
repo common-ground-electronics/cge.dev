@@ -6,27 +6,32 @@
 // is the copper underline bar from the base link rule appearing under it.
 // The theme colors nav links copper on hover; this outranks that rule.
 //
-// Site title: a three-line wordmark (COMMON / GROUND / ELECTRONICS) in
-// Monaspace Neon ExtraBold, the true 800 face vendored in static/fonts/ so
-// the browser never has to synthesize it. COMMON and GROUND at 36px,
-// ELECTRONICS at 18px in raw copper so its cap height is half theirs. Each
-// line is trimmed to its cap height, the gap between lines is a quarter of
-// the 36px cap height, and ELECTRONICS is tracked out to the same width as
-// the lines above. It links home but reads as a wordmark, so it shows none
-// of the link hover cues.
+// Site title: the brand's three-line wordmark (COMMON / GROUND /
+// ELECTRONICS), set to the same solve as the brand masters
+// brand/assets/svg/wordmark-light.svg and wordmark-dark.svg (V = 40 px
+// there; every distance below is that file's value divided by its COMMON
+// font size of 54.795 px, or by ELECTRONICS's 27.397 px). Monaspace Neon at
+// its natural cell pitch, COMMON and GROUND at 36px with ELECTRONICS at
+// 18px in raw copper so its cap height is half theirs (½V). Each line is
+// trimmed to its cap height and the lines sit ⅙V apart. ELECTRONICS is
+// tracked out 0.05em and starts 0.0738em in from the left edge of the lines
+// above, exactly as the master places it. It links home but reads as a
+// wordmark, so it shows none of the link hover cues.
 //
-// Monaspace Neon ExtraBold metrics (UPM 2000, identical across the Neon
-// weights): ascender 1890, descender 400, cap height 1460. In a 1em line box
-// the caps start 0.1425em below the top ((1 + 0.945 - 0.2) / 2 - 0.73) and
-// the baseline sits 0.1275em above the bottom ((1 - 0.945 + 0.2) / 2).
+// Monaspace Neon metrics (UPM 2000, identical across the Neon weights):
+// advance 1240, ascender 1890, descender 400, cap height 1460. In a 1em line
+// box the caps start 0.1425em below the top ((1 + 0.945 - 0.2) / 2 - 0.73)
+// and the baseline sits 0.1275em above the bottom ((1 - 0.945 + 0.2) / 2).
 //
 // Inter ExtraBold metrics (UPM 2048): ascender 1984, descender 494, cap
 // height 1490. In a 1em line box the caps start 0.1362em below the top.
 //
-// Dark scheme: COMMON and GROUND flip to paper and ELECTRONICS stays raw
-// copper, matching the brand's dark lockup; nav links take the dark
-// foreground. Follows the theme's body.colorscheme-dark / colorscheme-auto
-// pattern.
+// Dark scheme: the brand's dark wordmark. COMMON and GROUND flip to paper
+// and drop to Bold (700) so the reversed type doesn't bloom; ELECTRONICS
+// stays raw copper at 800, tracked 0.0482em and inset 0.0828em to match the
+// dark master's solve against the narrower Bold caps. Nav links take the
+// dark foreground. Follows the theme's body.colorscheme-dark /
+// colorscheme-auto pattern.
 //
 // Loaded via customSCSS in config.toml.
 
@@ -71,11 +76,14 @@ nav.navigation {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    // The anchor carries the wordmark font and size so the gap's cap unit is
-    // a quarter of the 36px cap height.
+    // The anchor carries the wordmark font and size so the gap is ⅙V, a
+    // sixth of the 36px cap height (0.73em), as in the masters. Spelled in
+    // em rather than cap: the anchor has no text of its own, so the browser
+    // may resolve its cap unit from the fallback font before Monaspace
+    // Neon has loaded.
     font-family: $code-font-family;
     font-size: 3.6rem;
-    gap: 0.25cap;
+    gap: calc(0.73em / 6);
     letter-spacing: 0;
 
     &:hover,
@@ -99,11 +107,13 @@ nav.navigation {
     .wordmark-line-sub {
       font-size: 0.5em;
       color: $copper;
-      // Monospace: 11 glyphs at half size must span 6 glyphs at full size,
-      // so each of the 10 gaps gets a tenth of an advance. Browsers also add
-      // the spacing after the last glyph; pull that back off the box.
-      letter-spacing: 0.1ch;
-      margin-right: -0.1ch;
+      // The master tracks the 11 glyphs out by 0.05em per gap and starts
+      // the line 2.022 units in from COMMON's left edge (2.022 / 27.397).
+      // Browsers also add the spacing after the last glyph; pull that back
+      // off the box.
+      margin-left: 0.0738em;
+      letter-spacing: 0.05em;
+      margin-right: -0.05em;
     }
   }
 }
@@ -119,10 +129,16 @@ nav.navigation {
 
     .navigation-title .wordmark-line {
       color: $paper;
+      font-weight: 700;
     }
 
     .navigation-title .wordmark-line-sub {
       color: $copper;
+      font-weight: 800;
+      // The dark master: 1.3207 / 27.397 per gap, starting 2.269 units in.
+      margin-left: 0.0828em;
+      letter-spacing: 0.0482em;
+      margin-right: -0.0482em;
     }
   }
 }
