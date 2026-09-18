@@ -30,6 +30,15 @@ Install [Hugo](https://gohugo.io/):
 brew install hugo
 ```
 
+Create a Python virtual environment in `.venv` and activate it:
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Activate it again in each new shell before running the commands below.
+
 Install the Python development tools listed in
 [dev-requirements.txt](dev-requirements.txt),
 [Invoke](https://www.pyinvoke.org/index.html) to run the tasks in `tasks.py`
