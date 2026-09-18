@@ -21,7 +21,7 @@ I figured it might be interesting to do a short post on how this business came i
 
 # Starting Common Ground Electronics
 
-I started [Common Ground Electronics](https://cgnd.dev/) back in November of 2022 as a part-time project.
+I started [Common Ground Electronics](https://cge.dev/) back in November of 2022 as a part-time project.
 
 If I'm being totally honest, I was initially just trying to figure out how I could start building out an electronics lab and write it off as a business expense. But, business expenses imply that some business is *actually being done*, so I started looking for my first part-time consulting client.
 
@@ -45,7 +45,7 @@ Finally, I helped the Golioth DevRel team run [monthly Zephyr trainings](https:/
 
 # Open Source
 
-As part of an [exploration into the use of pre-commit for embedded development](https://cgnd.dev/posts/enforce-zephyr-code-quality-pre-commit/), I open sourced https://github.com/common-ground-electronics/zephyr-pre-commit-hooks which is a collection of [pre-commit](https://pre-commit.com/) hooks for use with Zephyr.
+As part of an [exploration into the use of pre-commit for embedded development](https://cge.dev/posts/enforce-zephyr-code-quality-pre-commit/), I open sourced https://github.com/common-ground-electronics/zephyr-pre-commit-hooks which is a collection of [pre-commit](https://pre-commit.com/) hooks for use with Zephyr.
 
 I also made my first small contributions to upstream Zephyr in the last few months:
 
@@ -56,6 +56,6 @@ You can check out all of our open source projects on GitHub at https://github.co
 
 # Looking Forward
 
-In addition to authoring technical content for clients, I'm also starting to write about embedded systems and IoT-related topics on the [Common Ground Electronics blog](https://cgnd.dev/posts/). If there are topics of interest that you'd like me to write about, let me know in the comments below.
+In addition to authoring technical content for clients, I'm also starting to write about embedded systems and IoT-related topics on the [Common Ground Electronics blog](https://cge.dev/posts/). If there are topics of interest that you'd like me to write about, let me know in the comments below.
 
-If you're interested in hiring me for technical writing (or other engineering related work), feel free to [reach out](https://cgnd.dev/contact/).
+If you're interested in hiring me for technical writing (or other engineering related work), feel free to [reach out](https://cge.dev/contact/).

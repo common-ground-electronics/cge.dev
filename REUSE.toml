@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: Common Ground Electronics <https://cgnd.dev>
+# SPDX-FileCopyrightText: Common Ground Electronics <https://cge.dev>
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 version = 1
-SPDX-PackageName = "cgnd.dev"
-SPDX-PackageSupplier = "Common Ground Electronics <https://cgnd.dev>"
+SPDX-PackageName = "cge.dev"
+SPDX-PackageSupplier = "Common Ground Electronics <https://cge.dev>"
 SPDX-PackageDownloadLocation = "https://github.com/common-ground-electronics/cgnd.dev"
 
 [[annotations]]
@@ -22,13 +22,13 @@ path = [
     "**.pdf",
 ]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "Common Ground Electronics <https://cgnd.dev>"
+SPDX-FileCopyrightText = "Common Ground Electronics <https://cge.dev>"
 SPDX-License-Identifier = "CC-BY-4.0"
 
 [[annotations]]
 path = ["static/manifest.json", "**.scss"]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "Common Ground Electronics <https://cgnd.dev>"
+SPDX-FileCopyrightText = "Common Ground Electronics <https://cge.dev>"
 SPDX-License-Identifier = "MIT or Apache-2.0"
 
 [[annotations]]

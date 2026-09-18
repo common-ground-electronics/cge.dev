@@ -25,7 +25,7 @@ typora-copy-images-to: ./images
 
 ![quartus-parallels](images/quartus-parallels.png)
 
-Yesterday's post [How to run Intel Quartus® Prime Lite Edition via Remote Desktop](https://cgnd.dev/posts/intel-quartus-prime-lite-edition-via-remote-desktop/) covered how to set-up and run the Quartus tools from a separate Windows machine via Remote Desktop.
+Yesterday's post [How to run Intel Quartus® Prime Lite Edition via Remote Desktop](https://cge.dev/posts/intel-quartus-prime-lite-edition-via-remote-desktop/) covered how to set-up and run the Quartus tools from a separate Windows machine via Remote Desktop.
 
 This follow-up post covers how to install the exact same tools in a Windows VM running in Parallels on a Mac with Apple Silicon (ARM64). This is a nice alternative if you don't have an extra Windows machine available, or if you want to be able to edit Windows files directly from your Mac via Parallels file sharing.
 
@@ -35,7 +35,7 @@ The process for installing the tools is essentially the same as if you were inst
 
 If you haven't already, download and install [Intel® Quartus® Prime Lite Edition](https://fpgasoftware.intel.com/?edition=lite) in the Windows VM. In this guide I installed [Version 23.1.1 for Windows](https://www.intel.com/content/www/us/en/software-kit/825278/intel-quartus-prime-lite-edition-design-software-version-23-1-1-for-windows.html). You'll need to [sign in](https://www.intel.com/apps/intel/services/unifiedlogin.html) or [register](https://www.intel.com/content/www/us/en/secure/forms/developer/premier-registration.html) for an Intel account if you haven't already.
 
-You can follow the [official Intel docs](https://www.intel.com/content/www/us/en/docs/programmable/683472/23-1/faq.html) to set up either a *node-locked* or *floating* license (or you can check out the [instructions from yesterday's post](https://cgnd.dev/posts/intel-quartus-prime-lite-edition-via-remote-desktop/#request-a-license) for setting up a floating license).
+You can follow the [official Intel docs](https://www.intel.com/content/www/us/en/docs/programmable/683472/23-1/faq.html) to set up either a *node-locked* or *floating* license (or you can check out the [instructions from yesterday's post](https://cge.dev/posts/intel-quartus-prime-lite-edition-via-remote-desktop/#request-a-license) for setting up a floating license).
 
 {{< notice warning >}}
 

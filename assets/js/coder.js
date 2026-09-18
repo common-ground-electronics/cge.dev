@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2018 Luiz F. A. de Prá
-// SPDX-FileCopyrightText: Common Ground Electronics <https://cgnd.dev>
+// SPDX-FileCopyrightText: Common Ground Electronics <https://cge.dev>
 //
 // SPDX-License-Identifier: MIT
 //

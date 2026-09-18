@@ -21,7 +21,7 @@ typora-copy-images-to: ./images
 
 {{< notice note >}}
 
-I gave an updated version of this talk at Teardown 2025. Make sure to check out the updated slides at [Teardown 2025 Talk: Are we PLM yet?](https://cgnd.dev/posts/teardown-2025-talk-are-we-plm-yet/)
+I gave an updated version of this talk at Teardown 2025. Make sure to check out the updated slides at [Teardown 2025 Talk: Are we PLM yet?](https://cge.dev/posts/teardown-2025-talk-are-we-plm-yet/)
 
 {{< /notice >}}
 

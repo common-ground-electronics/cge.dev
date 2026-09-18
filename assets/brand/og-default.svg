@@ -1,18 +1,19 @@
-<!-- Default Open Graph card for cgnd.dev, derived from the brand template
-     brand/assets/social/og-light.svg (title text replaced per the template's
+<!-- Default Open Graph card for cge.dev, derived from the brand template
+     brand/assets/svg/og-light.svg (title text replaced per the template's
      two-line rule). To regenerate static/images/og.png after editing, see
      assets/brand/README.md in this repo. -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Archivo">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Monaspace Neon">
   <rect width="1200" height="630" fill="#FCFCFC"></rect>
   <g transform="translate(1200 76) scale(-0.93333 0.94)" stroke="#E3D5C6" fill="none" stroke-width="10">
     <g stroke-linejoin="round" stroke-linecap="round"><path d="M 0 40 H 180 L 220 80 H 344"></path><path d="M 0 110 H 264"></path><path d="M 0 170 H 130 L 160 140 H 404"></path></g>
     <circle cx="360" cy="80" r="13"></circle><circle cx="280" cy="110" r="13"></circle><circle cx="420" cy="140" r="13"></circle>
   </g>
-<g transform="translate(54.4 32) scale(1.4)"><path d="M 91.18 42 A 36 36 0 1 0 91.18 78 L 75.87 78 A 24 24 0 1 1 75.87 42 Z" fill="#21242A"></path><path d="M 60 54 L 95.5 54 A 36 36 0 0 1 95.5 66 L 60 66 Z" fill="#B87333"></path><path d="M 72 60 A 12 12 0 1 0 48 60 A 12 12 0 1 0 72 60 Z" fill="#B87333"></path></g>
-  <text x="222.4" y="112.25" font-size="31.2" font-weight="800" fill="#21242A" textLength="302.49" lengthAdjust="spacing">COMMON GROUND</text>
-  <text x="224.45" y="142.21" font-size="20.8" font-weight="500" fill="#21242A" textLength="228.99" lengthAdjust="spacing">ELECTRONICS</text>
-  <text x="88" y="407" font-size="72" font-weight="800" letter-spacing="-1" fill="#21242A">Embedded systems</text>
-  <text x="88" y="488" font-size="72" font-weight="800" letter-spacing="-1" fill="#21242A">engineering services</text>
-  <text x="88" y="550" font-family="Monaspace Neon" font-size="26" fill="#96591F">cgnd.dev</text>
+  <g transform="translate(56 32) scale(1.333)"><path d="M 91.18 42 A 36 36 0 1 0 91.18 78 L 75.87 78 A 24 24 0 1 1 75.87 42 Z" fill="#21242A"></path><path d="M 60 54 L 95.496 54 A 36 36 0 0 1 95.496 66 L 60 66 Z" fill="#B87333"></path><path d="M 72 60 A 12 12 0 1 0 48 60 A 12 12 0 1 0 72 60 Z" fill="#B87333"></path></g>
+  <text x="286.868" y="98.667" text-anchor="middle" font-size="43.836" font-weight="800" fill="#21242A" textLength="163.068" lengthAdjust="spacing">COMMON</text>
+  <text x="286.868" y="136" text-anchor="middle" font-size="43.836" font-weight="800" fill="#21242A" textLength="163.068" lengthAdjust="spacing">GROUND</text>
+  <text x="206.951" y="157.333" font-size="21.918" font-weight="800" fill="#B87333" textLength="160.438" lengthAdjust="spacing">ELECTRONICS</text>
+  <text x="88" y="407" font-family="Inter" font-size="64" font-weight="800" fill="#21242A">Embedded systems</text>
+  <text x="88" y="488" font-family="Inter" font-size="64" font-weight="800" fill="#21242A">engineering services</text>
+  <text x="88" y="550" font-family="Inter" font-size="26" fill="#96591F">cge.dev</text>
   <rect y="618" width="1200" height="12" fill="#B87333"></rect>
 </svg>
