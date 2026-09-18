@@ -15,7 +15,7 @@ When you contribute to this repository you are doing so under the above licenses
 
 ## SPDX & REUSE Compliance
 
- [![REUSE status](https://api.reuse.software/badge/github.com/common-ground-electronics/cgnd.dev)](https://api.reuse.software/info/github.com/common-ground-electronics/cgnd.dev)
+ [![REUSE status](https://api.reuse.software/badge/github.com/common-ground-electronics/cge.dev)](https://api.reuse.software/info/github.com/common-ground-electronics/cge.dev)
 
 This repository is compliant with version 3.3 of the [REUSE Specification](https://reuse.software/spec/).
 

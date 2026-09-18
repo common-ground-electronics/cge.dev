@@ -14,7 +14,7 @@ enableGitInfo = true
 [params]
 author = "Common Ground Electronics"
 license = ""
-licenseURL = "https://github.com/common-ground-electronics/cgnd.dev/blob/main/LICENSE.md"
+licenseURL = "https://github.com/common-ground-electronics/cge.dev/blob/main/LICENSE.md"
 description = "Common Ground Electronics"
 keywords = ""
 # info = ["Coming soon..."]
@@ -24,7 +24,7 @@ avatarURLDark = "images/logo-dark.svg"
 dateFormat = "January 2, 2006"
 since = 2022
 # Git Commit in Footer, uncomment the line below to enable it
-# commit = "https://github.com/common-ground-electronics/cgnd.dev/tree"
+# commit = "https://github.com/common-ground-electronics/cge.dev/tree"
 # Right To Left, shift content direction for languages such as Arabic
 rtl = false
 # Specify light/dark colorscheme
@@ -144,7 +144,7 @@ weight = 5
 url = "contact/"
 
 [params.giscus]
-repo = "common-ground-electronics/cgnd.dev"
+repo = "common-ground-electronics/cge.dev"
 repoID = "R_kgDOIcblIw"
 category = "Blog Posts"
 categoryID = "DIC_kwDOIcblI84CX7an"

@@ -24,7 +24,7 @@ inv preview
 
 ## Build & Deploy
 
-[![Deploy](https://github.com/common-ground-electronics/cgnd.dev/actions/workflows/deploy.yml/badge.svg)](https://github.com/common-ground-electronics/cgnd.dev/actions/workflows/deploy.yml)
+[![Deploy](https://github.com/common-ground-electronics/cge.dev/actions/workflows/deploy.yml/badge.svg)](https://github.com/common-ground-electronics/cge.dev/actions/workflows/deploy.yml)
 
 The site is served by a Cloudflare Worker (`wrangler.toml`) as static assets,
 deployed from GitHub Actions; nothing is built by Cloudflare itself.
