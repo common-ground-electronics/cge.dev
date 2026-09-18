@@ -27,3 +27,7 @@ hugo.linux
 
 # pyenv
 .python-version
+
+# Wrangler
+.wrangler/
+node_modules/

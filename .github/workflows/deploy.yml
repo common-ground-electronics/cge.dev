@@ -1,0 +1,44 @@
+# SPDX-FileCopyrightText: Common Ground Electronics <https://cge.dev>
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Pushes to main: build the site with Hugo, then deploy the Worker declared in
+# wrangler.toml. The first deploy also creates the cge.dev custom domain (DNS
+# record plus certificate). `workflow_dispatch` lets that first deploy be run
+# by hand from the Actions tab, from any branch, before anything is merged.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          submodules: true  # themes/hugo-coder
+          fetch-depth: 0  # enableGitInfo reads each page's last commit
+
+      - uses: peaceiris/actions-hugo@v3.2.1
+        with:
+          hugo-version: "0.143.0"
+          extended: true
+
+      - run: hugo
+
+      - name: Deploy to production
+        uses: cloudflare/wrangler-action@v4.0.0
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
