@@ -1,9 +1,9 @@
-# SPDX-FileCopyrightText: Common Ground Electronics <https://cgnd.dev>
+# SPDX-FileCopyrightText: Common Ground Electronics <https://cge.dev>
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-baseURL = "https://cgnd.dev"
-title = "cgnd.dev"
+baseURL = "https://cge.dev"
+title = "cge.dev"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -20,7 +20,7 @@ keywords = ""
 # info = ["Coming soon..."]
 avatarURL = "images/logo.svg"
 avatarURLDark = "images/logo-dark.svg"
-# gravatar = "gravatar@cgnd.dev"
+# gravatar = "gravatar@cge.dev"
 dateFormat = "January 2, 2006"
 since = 2022
 # Git Commit in Footer, uncomment the line below to enable it
@@ -88,7 +88,7 @@ url = "https://github.com/common-ground-electronics"
 name = "Bluesky"
 icon = "fa-brands fa-bluesky fa-2x"
 weight = 2
-url = "https://bsky.app/profile/cgnd.dev"
+url = "https://bsky.app/profile/cge.dev"
 rel = "me"
 
 [[params.social]]
@@ -114,7 +114,7 @@ url = "https://www.linkedin.com/company/common-ground-electronics/"
 name = "RSS"
 icon = "fa fa-rss fa-2x"
 weight = 6
-url = "https://cgnd.dev/index.xml"
+url = "https://cge.dev/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
 

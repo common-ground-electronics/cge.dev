@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: Common Ground Electronics <https://cgnd.dev>
+# SPDX-FileCopyrightText: Common Ground Electronics <https://cge.dev>
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
@@ -8,3 +8,19 @@
 
 [build.environment]
   HUGO_VERSION = "0.143.0"
+
+# The site moved from cgnd.dev to cge.dev. cgnd.dev and www.cgnd.dev stay
+# attached to this Netlify site as domain aliases so Netlify serves TLS for
+# them, and these host-scoped rules send every old URL to the same path on
+# cge.dev. `force = true` makes the rule win even though the path exists.
+[[redirects]]
+  from = "https://cgnd.dev/*"
+  to = "https://cge.dev/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.cgnd.dev/*"
+  to = "https://cge.dev/:splat"
+  status = 301
+  force = true
