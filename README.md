@@ -30,10 +30,13 @@ Install [Hugo](https://gohugo.io/):
 brew install hugo
 ```
 
-Install [Invoke](https://www.pyinvoke.org/index.html):
+Install the Python development tools listed in
+[dev-requirements.txt](dev-requirements.txt),
+[Invoke](https://www.pyinvoke.org/index.html) to run the tasks in `tasks.py`
+and [REUSE](https://reuse.software/) to check the license headers:
 
 ```sh
-pip install invoke
+pip install -r dev-requirements.txt
 ```
 
 ## Local Build & Preview
