@@ -3,9 +3,11 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 # Pushes to main: build the site with Hugo, then deploy the Worker declared in
-# wrangler.toml. The first deploy also creates the cge.dev custom domain (DNS
-# record plus certificate). `workflow_dispatch` lets that first deploy be run
-# by hand from the Actions tab, from any branch, before anything is merged.
+# wrangler.toml. The first deploy also creates the Worker itself and the
+# cge.dev custom domain (DNS record plus certificate); pull-request previews
+# cannot be uploaded until that has happened once. `workflow_dispatch` allows
+# a redeploy by hand from the Actions tab, which GitHub only offers once this
+# file is on the default branch.
 name: Deploy
 
 on:
