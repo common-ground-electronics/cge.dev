@@ -2,6 +2,26 @@
 
 Common Ground Electronics Website
 
+## Cloning
+
+The theme, [hugo-coder](https://github.com/common-ground-electronics/hugo-coder),
+is a Git submodule in `themes/hugo-coder`, and the site does not build without
+it. Clone the repository together with its submodules:
+
+```sh
+git clone --recurse-submodules https://github.com/common-ground-electronics/cge.dev.git
+```
+
+If the repository was already cloned without them, fetch the submodules from
+inside the checkout:
+
+```sh
+git submodule update --init --recursive
+```
+
+Run the same command after pulling a commit that moves the theme to a new
+revision.
+
 ## Local Development Environment
 
 Install [Hugo](https://gohugo.io/):
