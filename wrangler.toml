@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: Common Ground Electronics <https://cge.dev>
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Cloudflare Worker that serves the Hugo build as static assets. There is no
+# Worker script: an assets-only Worker answers every request straight from
+# `public/`, and those requests are free and unlimited on the Workers Free
+# plan.
+#
+# Deploys come from GitHub Actions (see .github/workflows/), never from a git
+# integration in the Cloudflare dashboard, so Actions owns the build.
+name = "cge-dev"
+compatibility_date = "2026-09-18"
+
+# Production is reachable only on the custom domain. Keeping the workers.dev
+# route off means the site is not also served (and indexed) at
+# cge-dev.<account>.workers.dev.
+workers_dev = false
+# Pull-request previews use Preview URLs, which stay on workers.dev even with
+# the production route disabled. See .github/workflows/preview.yml.
+preview_urls = true
+
+# Cloudflare creates the DNS record and certificate for the custom domain on
+# the first `wrangler deploy`. The cge.dev zone must be in the same account,
+# and the hostname must not already have a CNAME record.
+[[routes]]
+pattern = "cge.dev"
+custom_domain = true
+
+[assets]
+directory = "./public"
+# Hugo writes public/404.html; serve it with a real 404 status.
+not_found_handling = "404-page"
+# Hugo links end in "/" and every page is a directory index, so /posts/ is
+# served from posts/index.html and /posts redirects to /posts/.
+html_handling = "auto-trailing-slash"
